@@ -1,3 +1,3 @@
 public interface SupprimerTask{
-    public supprimer(Task task);
+    public void supprimer(Task task);
 }

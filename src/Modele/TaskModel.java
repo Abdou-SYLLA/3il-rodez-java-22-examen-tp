@@ -1,4 +1,5 @@
-import java.utils.List;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TaskModel implements AjoutTask, SupprimerTask{
     private  List<Task> tasks;
@@ -16,12 +17,13 @@ public class TaskModel implements AjoutTask, SupprimerTask{
     }
 
 
-    public ajouter(Task task){
-        task.add(task);
+    @Override
+    public void ajouter(Task task) {
+        tasks.add(task);
     }
 
+    @Override
     public void supprimer(Task task){
-        task.remove(task);
+        tasks.remove(task);
     }
-
 }

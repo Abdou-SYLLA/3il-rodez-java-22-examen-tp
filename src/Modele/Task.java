@@ -1,10 +1,11 @@
 
+
 public class Task {
     private String titre;
     private String description;
     private String dateEcheance;
 
-    public Tache(String titre, String description, String dateEcheance) {
+    public Task(String titre, String description, String dateEcheance) {
         this.titre = titre;
         this.description = description;
         this.dateEcheance = dateEcheance;
