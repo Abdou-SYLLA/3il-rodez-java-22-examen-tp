@@ -11,8 +11,8 @@ class View extends JFrame  {
     private JTextArea description = new JTextArea("description");
     private JTextArea dateEcheance = new JTextArea("dateEcheance");
 
-    JButton ajouter = new JButton("Ajouter");
-    JButton supprimer = new JButton("Supprimer");
+    private JButton ajouter = new JButton("Ajouter");
+    private JButton supprimer = new JButton("Supprimer");
 
 
     View(TaskModel modele) {
@@ -42,6 +42,22 @@ class View extends JFrame  {
 
     public JButton getSupprimer() {
         return supprimer;
+    }
+
+    public TaskModel getModele() {
+        return modele;
+    }
+
+    public JTextArea getNom() {
+        return nom;
+    }
+
+    public JTextArea getDescription() {
+        return description;
+    }
+
+    public JTextArea getDateEcheance() {
+        return dateEcheance;
     }
 
     public static void main(String[] args) {
