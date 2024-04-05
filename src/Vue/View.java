@@ -68,7 +68,6 @@ class View extends JFrame  {
 
         JFrame frame = new JFrame("Gestionnaire de tache");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(view);
         frame.setExtendedState(Frame.MAXIMIZED_BOTH);
         frame.setFocusable(true);
         frame.requestFocusInWindow();
